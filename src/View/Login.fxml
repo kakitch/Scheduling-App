@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <Button fx:id="logButton" alignment="CENTER"  layoutY="267.0" mnemonicParsing="false" onAction="#logInOnClick" text="Log-In" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250." />
+      <TextField fx:id="userNameTxt" layoutX="226.0" layoutY="167.0" />
+      <PasswordField fx:id="passwordTxt" layoutX="226.0" layoutY="214.0" />
+      <Label fx:id="logTitle" alignment="CENTER"  layoutY="88.0" text="Scheduling App" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"  >
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="logUn" layoutX="155.0" layoutY="170.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LogPw" layoutX="155.0" layoutY="216.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="logInMessage" alignment="CENTER" layoutY="326.0" text="Label" textFill="RED" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

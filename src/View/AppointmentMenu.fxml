@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppointmentMenuController">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="5.0" layoutY="94.0" prefHeight="527.0" prefWidth="971.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="All Appointments">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="appointTbleA" prefHeight="498.0" prefWidth="971.0">
+                           <columns>
+                              <TableColumn fx:id="appIDA" prefWidth="117.0" text="Appointment_ID" />
+                              <TableColumn fx:id="titleA" minWidth="0.0" prefWidth="92.0" text="Title" />
+                              <TableColumn fx:id="descA" prefWidth="91.0" text="Description" />
+                              <TableColumn fx:id="LocationA" minWidth="0.0" prefWidth="91.0" text="Location" />
+                              <TableColumn fx:id="contactA" prefWidth="100.0" text="Contact" />
+                              <TableColumn fx:id="typeA" minWidth="0.0" prefWidth="64.0" text="Type" />
+                              <TableColumn fx:id="startA" prefWidth="105.0" text="Start " />
+                              <TableColumn fx:id="EndA" prefWidth="120.0" text="End " />
+                              <TableColumn fx:id="cIDA" prefWidth="120.0" text="Customer_ID" />
+                              <TableColumn fx:id="uIDA" prefWidth="70.0" text="User_ID" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="All Appointments this Month">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="appointTbleM" prefHeight="498.0" prefWidth="971.0">
+                           <columns>
+                              <TableColumn fx:id="appIDM" prefWidth="117.0" text="Appointment_ID" />
+                              <TableColumn fx:id="titleM" minWidth="0.0" prefWidth="92.0" text="Title" />
+                              <TableColumn fx:id="descM" prefWidth="91.0" text="Description" />
+                              <TableColumn fx:id="LocationM" minWidth="0.0" prefWidth="91.0" text="Location" />
+                              <TableColumn fx:id="ContactM" prefWidth="100.0" text="Contact" />
+                              <TableColumn fx:id="typeM" minWidth="0.0" prefWidth="64.0" text="Type" />
+                              <TableColumn fx:id="StartM" prefWidth="105.0" text="Start " />
+                              <TableColumn fx:id="EndM" prefWidth="120.0" text="End " />
+                              <TableColumn fx:id="cIDM" prefWidth="120.0" text="Customer_ID" />
+                              <TableColumn fx:id="uIDM" prefWidth="70.0" text="User_ID" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="All Appointments this Week">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="appointTbleW" layoutX="5.0" layoutY="149.0" prefHeight="498.0" prefWidth="971.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="appIDW" prefWidth="117.0" text="Appointment_ID" />
+                            <TableColumn fx:id="titleW" minWidth="0.0" prefWidth="92.0" text="Title" />
+                              <TableColumn fx:id="descW" prefWidth="91.0" text="Description" />
+                              <TableColumn fx:id="locationW" minWidth="0.0" prefWidth="91.0" text="Location" />
+                              <TableColumn fx:id="contactW" prefWidth="100.0" text="Contact" />
+                              <TableColumn fx:id="typeW" minWidth="0.0" prefWidth="64.0" text="Type" />
+                              <TableColumn fx:id="startW" prefWidth="105.0" text="Start " />
+                              <TableColumn fx:id="endW" prefWidth="120.0" text="End " />
+                              <TableColumn fx:id="cIDW" prefWidth="120.0" text="Customer_ID" />
+                              <TableColumn fx:id="uIDW" prefWidth="70.0" text="User_ID" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="14.0" layoutY="646.0" mnemonicParsing="false" onAction="#addAppointmentBtn" text="Add Appointment" />
+      <Button layoutX="133.0" layoutY="646.0" mnemonicParsing="false" onAction="#updateAppointmentBtn" text="Update Appointment" />
+      <Button layoutX="268.0" layoutY="646.0" mnemonicParsing="false" onAction="#DeleteAppointmentBtn" text="Delete Appointment" />
+      <Label layoutX="14.0" layoutY="14.0" text="Appointments">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="916.0" layoutY="14.0" mnemonicParsing="false" onAction="#reportsBtn" text="Reports" />
+      <Button layoutX="836.0" layoutY="14.0" mnemonicParsing="false" onAction="#CustomersBtn" text="Customers" />
+   </children>
+</AnchorPane>
